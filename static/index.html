@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcade</title>
+  <link rel="stylesheet" href="/static/game.css" />
+</head>
+<body>
+  <main class="shell">
+    <h1>Arcade</h1>
+    <p class="hint">方向键转向，吃豆得分。空格开始/重开。</p>
+    <div class="hud">
+      <span>分数 <strong id="score">0</strong></span>
+      <span id="state">按空格开始</span>
+    </div>
+    <canvas id="board" width="400" height="400" aria-label="snake board"></canvas>
+    <form id="submit" class="submit" hidden>
+      <label>昵称 <input id="name" maxlength="24" required /></label>
+      <button type="submit">提交分数</button>
+    </form>
+    <p id="message" class="message" role="status"></p>
+  </main>
+  <script src="/static/game.js"></script>
+</body>
+</html>
